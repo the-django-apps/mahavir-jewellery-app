@@ -14,6 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 TEMP_DIR = os.path.join(BASE_DIR,'templates')
 STATICS_DIR =os.path.join(BASE_DIR,'statics')
 
@@ -57,7 +58,9 @@ ROOT_URLCONF = 'mahavirJewellery.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+
         'DIRS': [TEMP_DIR],
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,4 +127,5 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     STATICS_DIR
+
 ]
